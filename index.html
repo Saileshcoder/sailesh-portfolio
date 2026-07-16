@@ -3,53 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sailesh S.G | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <title>Srisailesh | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="navbar">
-        <div class="logo">Srisailesh</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Srisailesh</a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <header id="about" class="hero">
-        <h1>Hi, I'm Sailesh S.G</h1>
-        <h2>Computer Science Engineer | Java Full Stack Developer | AI Enthusiast</h2>
-        <p>Honing my expertise at QSpiders Coimbatore. Passionate about AI and turning complex problems into elegant solutions.</p>
+    <!-- Hero Section -->
+    <header id="home" class="hero section hidden-on-scroll">
+        <div class="hero-content">
+            <h2 class="greeting">Hello, I'm</h2>
+            <h1 class="name glow-text">Sailesh S.G</h1>
+            <h3 class="headline">Computer Science Engineer | Java Full Stack Developer | AI Enthusiast</h3>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="profile-img-container">
+                <!-- Placeholder image, user can replace -->
+                <img src="https://via.placeholder.com/300" alt="Srisailesh Profile" class="profile-img">
+            </div>
+        </div>
     </header>
 
-    <section id="projects" class="section">
-        <h2 class="section-title">My Projects</h2>
-        <div id="projects-container" class="grid-container">
-            <p>Loading projects...</p>
+    <!-- About Section -->
+    <section id="about" class="section hidden-on-scroll">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container card">
+            <p>I am honing my expertise in Java Full Stack Development at QSpiders Coimbatore. I am deeply passionate about Artificial Intelligence and turning complex, real-world problems into elegant, practical software solutions.</p>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- Skills Section -->
+    <section id="skills" class="section hidden-on-scroll">
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category card">
+                <i class="fa-solid fa-code icon"></i>
+                <h3>Core Languages & Web</h3>
+                <p>Java, JavaScript, HTML, CSS, Data Structures and Algorithms (DSA)</p>
+            </div>
+            <div class="skill-category card">
+                <i class="fa-solid fa-database icon"></i>
+                <h3>Database & BaaS</h3>
+                <p>Supabase, Firebase</p>
+            </div>
+            <div class="skill-category card">
+                <i class="fa-solid fa-brain icon"></i>
+                <h3>AI Prompting & Tools</h3>
+                <p>Antigravity, Claude, Gemini, ChatGPT</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section hidden-on-scroll">
+        <h2 class="section-title">Projects Showcase</h2>
+        <div class="projects-grid">
+            <div class="project-card card">
+                <h3>Powered Smart Local Job Connect Platform</h3>
+                <p>A full-stack application bridging community gaps using intelligent solutions.</p>
+                <div class="tech-stack"><span>Full Stack</span><span>AI</span></div>
+            </div>
+            <div class="project-card card">
+                <h3>IoT Dashboard (DenseNet Technologies)</h3>
+                <p>A real-time data visualization and management dashboard for IoT devices.</p>
+                <div class="tech-stack"><span>IoT</span><span>Dashboard</span></div>
+            </div>
+            <div class="project-card card">
+                <h3>DryWash WebApp</h3>
+                <p>A web application built to streamline operations and booking for dry-washing services.</p>
+                <div class="tech-stack"><span>Web App</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section hidden-on-scroll">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certs-container">
+            <div class="cert-card card">
+                <i class="fa-solid fa-certificate cert-icon"></i>
+                <div>
+                    <h3>Continuous Integration and Delivery - DevOps</h3>
+                    <p>Infosys Springboard</p>
+                </div>
+            </div>
+            <div class="cert-card card">
+                <i class="fa-solid fa-certificate cert-icon"></i>
+                <div>
+                    <h3>Introduction to Agile Methodology</h3>
+                    <p>Infosys Springboard</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer hidden-on-scroll">
         <h2 class="section-title">Let's Connect</h2>
-        <form id="contact-form" class="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-            <button type="submit" id="submit-btn">Send Message</button>
-            <p id="form-status"></p>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Sailesh S.G. All rights reserved.</p>
+        <p>Feel free to reach out for collaborations or just a friendly chat!</p>
         <div class="social-links">
-            <a href="mailto:srisailesh54@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://github.com/Saileshcoder" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/sri-sailesh-3802222a3" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:srisailesh54@gmail.com" class="social-icon" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/Saileshcoder" target="_blank" class="social-icon" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sri-sailesh-3802222a3" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         </div>
+        <p class="copyright">&copy; 2026 Sailesh S.G. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
