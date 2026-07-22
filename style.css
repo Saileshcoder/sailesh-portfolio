@@ -513,24 +513,49 @@ body {
     margin: 0 auto;
 }
 
+.cert-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 .cert-card {
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    cursor: pointer;
+}
+
+.cert-card:hover .external-icon {
+    transform: translate(3px, -3px);
+    color: var(--accent-blue);
+}
+
+.cert-card:hover h3 {
+    color: var(--accent-blue);
+}
+
+.external-icon {
+    font-size: 0.85rem;
+    margin-left: 0.5rem;
+    color: var(--text-muted);
+    transition: all 0.3s ease;
 }
 
 .cert-icon {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--accent-purple);
 }
 
 .cert-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.2rem;
+    transition: color 0.3s ease;
 }
 
 .cert-card p {
     color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
 /* Footer */
