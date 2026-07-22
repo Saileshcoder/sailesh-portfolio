@@ -52,10 +52,48 @@
     <!-- About Section -->
     <section id="about" class="section hidden-on-scroll">
         <h2 class="section-title">About Me</h2>
-        <div class="about-container card">
-            <p>I am honing my expertise in Java Full Stack Development at QSpiders Coimbatore. I am deeply passionate about Artificial Intelligence and turning complex, real-world problems into elegant, practical software solutions.</p>
+        <div class="about-hero-style">
+            <div class="status-badge"><span class="pulse-dot">✦</span> AVAILABLE FOR WORK |</div>
+            <h1 class="big-role-title">
+                Fullstack<br>
+                <span>Developer</span>
+            </h1>
+            <p class="about-description">
+                I am honing my expertise in Java Full Stack Development at QSpiders Coimbatore. I am deeply passionate about Artificial Intelligence and turning complex, real-world problems into elegant, practical software solutions.
+            </p>
+            <div class="about-pills">
+                <span class="pill">HTML</span>
+                <span class="pill">Tailwind CSS</span>
+                <span class="pill">JavaScript</span>
+                <span class="pill">Java</span>
+                <span class="pill">Supabase</span>
+                <span class="pill">Firebase</span>
+                <span class="pill">AI Prompting</span>
+            </div>
+            <div class="about-actions">
+                <button id="show-card-btn" class="action-btn btn-glow"><i class="fa-solid fa-id-card"></i> SHOW CARD</button>
+                <a href="#contact" class="action-btn btn-outline">CONTACT ME</a>
+            </div>
         </div>
     </section>
+
+    <!-- Show Card Animated Modal -->
+    <div id="card-modal" class="modal-overlay">
+        <div class="modal-card">
+            <button id="close-modal-btn" class="close-btn">&times;</button>
+            <div class="modal-img-container">
+                <img src="profile.jpg" alt="Srisailesh Profile" class="modal-profile-img">
+            </div>
+            <div class="modal-info">
+                <h3>Sailesh S.G</h3>
+                <p class="modal-role">Java Full Stack Developer & AI Enthusiast</p>
+                <div class="modal-tags">
+                    <span>QSpiders Coimbatore</span>
+                    <span>Full Stack</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Skills Section -->
     <section id="skills" class="section hidden-on-scroll">

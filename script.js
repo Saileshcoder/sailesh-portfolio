@@ -69,3 +69,24 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// 5. Show Card Modal Interactivity
+const showCardBtn = document.getElementById('show-card-btn');
+const closeModalBtn = document.getElementById('close-modal-btn');
+const cardModal = document.getElementById('card-modal');
+
+if (showCardBtn && cardModal) {
+    showCardBtn.addEventListener('click', () => {
+        cardModal.classList.add('active');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        cardModal.classList.remove('active');
+    });
+
+    cardModal.addEventListener('click', (e) => {
+        if (e.target === cardModal) {
+            cardModal.classList.remove('active');
+        }
+    });
+}
