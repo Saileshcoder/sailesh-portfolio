@@ -435,18 +435,31 @@ body {
     font-weight: 600;
 }
 
-.modal-tags {
+.modal-actions {
     display: flex;
     justify-content: center;
-    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
-.modal-tags span {
-    font-size: 0.75rem;
-    background: rgba(255, 255, 255, 0.08);
-    padding: 0.3rem 0.8rem;
-    border-radius: 12px;
-    color: var(--text-muted);
+.modal-resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+    color: #ffffff;
+    padding: 0.6rem 1.6rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
+}
+
+.modal-resume-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    color: #ffffff;
 }
 
 /* Skills */

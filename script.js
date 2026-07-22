@@ -75,6 +75,8 @@ const showCardBtn = document.getElementById('show-card-btn');
 const closeModalBtn = document.getElementById('close-modal-btn');
 const cardModal = document.getElementById('card-modal');
 
+const modalResumeLink = document.getElementById('modal-resume-link');
+
 if (showCardBtn && cardModal) {
     showCardBtn.addEventListener('click', () => {
         cardModal.classList.add('active');
@@ -83,6 +85,12 @@ if (showCardBtn && cardModal) {
     closeModalBtn.addEventListener('click', () => {
         cardModal.classList.remove('active');
     });
+
+    if (modalResumeLink) {
+        modalResumeLink.addEventListener('click', () => {
+            cardModal.classList.remove('active');
+        });
+    }
 
     cardModal.addEventListener('click', (e) => {
         if (e.target === cardModal) {
